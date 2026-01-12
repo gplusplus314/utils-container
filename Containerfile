@@ -1,4 +1,4 @@
-FROM rockylinux:10
+FROM rockylinux/rockylinux:10
 
 RUN dnf install -y epel-release && \
 	dnf install -y https://zfsonlinux.org/epel/zfs-release-2-4$(rpm --eval "%{dist}").noarch.rpm && \
